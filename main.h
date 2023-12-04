@@ -26,5 +26,7 @@ ssize_t getline(char **lineptr, size_t *n, FILE *stream);
  */
 char *strtok(char *str, const char *delim);
 
+void exec(char **argv);
+int execve(const char *pathname, char *const argv[], char *const envp[]);
 
 #endif

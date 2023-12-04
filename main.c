@@ -62,9 +62,11 @@ int main(int ac, char **argv)
 		}
 		argv[i] = NULL;
 
-		printf("%s\n", lineptr);
-
-		free(lineptr);
+		exec(argv);
 	}
+
+	free(lineptr_cpy);
+	free(lineptr);
+
 	return (0);
 }
