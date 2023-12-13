@@ -16,7 +16,7 @@ void exec(char **argv)
 		command = argv[0];
 
 		actual_comm = get_location(command);
-		
+
 		if (execve(actual_comm, argv, NULL) == -1)
 		{
 			perror("Error:");
