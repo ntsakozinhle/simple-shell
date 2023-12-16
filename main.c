@@ -24,7 +24,7 @@ int main(void)
 	{
 		if (isatty(STDIN_FILENO))
 		{
-			write(STDOUT_FILENO, prompt, 2);
+			write(STDOUT_FILENO, prompt, 3);
 		}
 
 		line_len = getline(&input, &input_size, stdin);
